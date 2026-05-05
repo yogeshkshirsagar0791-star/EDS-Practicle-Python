@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+
+# Sample data
+labels = ['Category A', 'Category B', 'Category C', 'Category D']
+sizes = [15, 30, 45, 10]
+colors = ['gold', 'yellowgreen', 'lightcoral', 'lightskyblue']
+explode = (0, 0.1, 0, 0)
+
+# Create the pie chart
+plt.figure(figsize=(8, 8))
+plt.pie(sizes, explode=explode, labels=labels, colors=colors,
+autopct='%1.1f%%', shadow=True, startangle=140)
+plt.axis('equal')
+plt.title('Sample Pie Chart')
+plt.show()
